@@ -181,7 +181,7 @@ struct Home: View {
                               .padding(.horizontal, 16)
                             
                                 Button{
-                                    dataManager.addCard(makerX: "\(userViewModel.userEmail)", termX: addTerm, definitionX: addDefinition, colorX: "")
+                                    dataManager.addCard(makerX: "\(userViewModel.userEmail)", termX: addTerm, definitionX: addDefinition, colorX: addColor)
                                     dataManager.fetchCards()
                                     ifAdd = false
                                     addTerm = ""
